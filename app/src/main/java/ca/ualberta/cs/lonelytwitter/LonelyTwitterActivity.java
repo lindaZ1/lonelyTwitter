@@ -28,7 +28,7 @@ public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file.sav";
 	private EditText bodyText;
-	private ArrayList<Tweet> tweets=new ArrayList<Tweet>();
+	private ArrayList<Tweet> tweets =new ArrayList<Tweet>();
 	private ListView oldTweetsList;
 	private ArrayAdapter<Tweet> adapter;
 
@@ -72,8 +72,8 @@ public class LonelyTwitterActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onStart();
 		loadFromFile();
-		adapter = new ArrayAdapter<Tweet>(this,
-				R.layout.list_item, tweets);
+		adapter = new ArrayAdapter<Tweet>(this, R.layout.list_item, tweets);
+
 		oldTweetsList.setAdapter(adapter);
 		adapter.notifyDataSetChanged();
 	}
